@@ -1,0 +1,131 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>register</title>
+<link href="./JSCSS/templatemo_style.css" rel="stylesheet"
+	type="text/css" />
+<script type="text/javascript">
+	function createid() {
+		var myDate = new Date();
+		var idstring = myDate.getFullYear() + '' + (myDate.getMonth() + 1) + ''
+				+ myDate.getDate() + '' + myDate.getHours() + ''
+				+ myDate.getMinutes() + '' + myDate.getSeconds();
+		document.getElementById("userid").value = idstring;
+	}
+
+	function CheckInfo(form) {
+		var mail = document.getElementById("email").value;
+		var name = document.getElementById("name").value;
+		var password = document.getElementById("password").value;
+		var filter = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+		if (!filter.test(mail)) {
+			alert('Please check your email');
+			return false;
+		} else {
+			if (name == "") {
+				alert('Please enter your name');
+				return false;
+			} else {
+				if (password.length < 6) {
+					alert('Password should be no less than 6 digits');
+					return false;
+				} else {
+					return true;
+				}
+			}
+		}
+	}
+</script>
+</head>
+<body onload="createid()">
+	<div id="templatemo_top_section">
+		<div class="templatemo_container">
+			<div id="templatemo_header">
+				<div id="templatemo_logo_area">
+					<h2>Register</h2>
+					<p></p>
+				</div>
+				<div id="templatemo_header_right">
+
+					<h2></h2>
+					<p>
+						<a></a>
+
+					</p>
+
+				</div>
+				<div class="cleaner"></div>
+				<div id="templatemo_menu">
+					<ul>
+						<li class="current"><a href="index.jsp">mainpage</a>
+							<p>start here</p></li>
+						<li><a href="login.jsp">login</a>
+							<p>more function</p></li>
+						<li><a href="register.jsp">register</a>
+							<p>create account</p></li>
+						<li class="last"><a href="javascript :;"
+							onClick="javascript :history.back(-1);">go back</a>
+							<p>previous page</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Of Container  -->
+	</div>
+
+	<div id="templatemo_middle_section">
+		<div class="templatemo_container">
+
+			<div class="templatemo_3_col left_section">
+				<h1>Complete the Info</h1>
+				<form action="welcome.jsp" method="post">
+					<table>
+						<tr>
+							<td><a style="color: #FFF">Email</a></td>
+							<td><input id="email" type="text" name="email"></td>
+						</tr>
+						<tr>
+							<td><a style="color: #FFF">Full name</a></td>
+							<td><input id="name" type="text" name="name"></td>
+						</tr>
+						<tr>
+							<td><a style="color: #FFF">Password</a></td>
+							<td><input id="password" type="password" name="password"></td>
+						</tr>
+						<tr>
+							<td><a style="color: #FFF">Gender</a></td>
+							<td>
+								<table>
+									<tr>
+										<td><input type="radio" name="gender" value="Male"
+											checked="checked"><a style="color: #FFF">Male</a></td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="gender" value="Female"><a
+											style="color: #FFF">Female</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><input id="userid" name="userid" type="hidden" value=""></td>
+							<td><input type="submit" value="Register"
+								onclick="return CheckInfo(this.form)"></td>
+						</tr>
+
+					</table>
+
+				</form>
+			</div>
+
+			<div class="cleaner"></div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
