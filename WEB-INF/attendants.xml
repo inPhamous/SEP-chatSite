@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attendants>
+	<attendant>
+		<id>p001</id>
+		<person>Ryan Heise</person>
+		<description>9:00-10:00 19:00-20:00 </description>
+	</attendant>
+	<attendant>
+		<id>p002</id>
+		<person>Chen</person>
+		<description>9:00-10:00 </description>
+	</attendant>
+	<attendant>
+		<id>p001</id>
+		<person>Chen Wang</person>
+		<description>9:00-10:00 19:00-20:00 </description>
+	</attendant>
+</attendants>

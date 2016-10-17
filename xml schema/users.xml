@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users xmlns="http://www.uts.edu.au/31284/wsd-users"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-users users.xsd">
+	<user>
+		<id>20160501111111</id>
+		<email>ryan@ryanheise.com</email>
+		<name>Ryan Heise</name>
+		<password>111</password>
+		<gender>male</gender>
+	</user>
+	<user>
+		<id>20160501111112</id>
+		<email>joe@bloggs.com</email>
+		<name>Joe Bloggs</name>
+		<password>111</password>
+		<gender>male</gender>
+	</user>
+</users>

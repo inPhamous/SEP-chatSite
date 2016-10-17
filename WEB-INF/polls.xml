@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<polls>
+	<poll>
+		<id>p001</id>
+		<userid>20160501111111</userid>
+		<title>How to do this</title>
+		<person>Ryan Heise</person>
+		<location>abc</location>
+		<creationdata>2016-5-30 18:44:34</creationdata>
+		<description>blabalabala</description>
+		<isclose>1</isclose>
+	</poll>
+	<poll>
+		<id>p002</id>
+		<userid>20160501111112</userid>
+		<title>Do you want to do this</title>
+		<person>Joe Bloggs</person>
+		<location>abc</location>
+		<creationdata>2016-5-30 18:44:35</creationdata>
+		<description>blabalabala</description>
+		<isclose>1</isclose>
+	</poll>
+</polls>

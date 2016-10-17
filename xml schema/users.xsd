@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.uts.edu.au/31284/wsd-users" xmlns="http://www.uts.edu.au/31284/wsd-users"
+	elementFormDefault="qualified">
+	
+	<xs:simpleType name="email">
+		<xs:restriction base="xs:string">
+		<xs:pattern value="\w+([-+.^_]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name='person'>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z][a-z]+(\s[A-Z][a-z]*)*" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:simpleType name="gender">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([m][a][l][e])|([f][e][m][a][l][e])" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	
+	
+	<xs:element name="users">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="user" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:string" />
+							<xs:element name="email" type="email" />
+							<xs:element name="name" type="person" />
+							<xs:element name="password" type="xs:string" />
+							<xs:element name="gender" type="gender" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>

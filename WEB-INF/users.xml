@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+	<user>
+		<id>20160501111111</id>
+		<email>ryan@ryanheise.com</email>
+		<name>Ryan Heise</name>
+		<password>111</password>
+		<gender>male</gender>
+	</user>
+	<user>
+		<id>20160501111112</id>
+		<email>joe@bloggs.com</email>
+		<name>Joe Bloggs</name>
+		<password>111</password>
+		<gender>male</gender>
+	</user>
+</users>

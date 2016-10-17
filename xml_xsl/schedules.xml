@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="schedules.xsl"?>
+<schedules>
+	<schedule>
+		<id>p001</id>
+		<description>9:00-10:00</description>
+		<count>2</count>
+	</schedule>
+	<schedule>
+		<id>p001</id>
+		<description>19:00-20:00</description>
+		<count>2</count>
+	</schedule>
+	<schedule>
+		<id>p002</id>
+		<description>9:00-10:00</description>
+		<count>1</count>
+	</schedule>
+	<schedule>
+		<id>p002</id>
+		<description>10:00-11:00</description>
+		<count>0</count>
+	</schedule>
+	<schedule>
+		<id>p002</id>
+		<description>12:00-13:00</description>
+		<count>0</count>
+	</schedule>
+</schedules>
